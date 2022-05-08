@@ -46,7 +46,7 @@ export default class KeyboardView extends View {
       (button) => {
         this.buttons[button.code] = new KeyboardButtonView(this.node, {
           charCode: button.code,
-          actualChar: button.content.ru,
+          actualChar: button.content[this.model.getLanguage()],
           onKeyDown: (charCode) => this.handleKeyDown(charCode),
           onKeyUp: (charCode) => this.handleKeyUp(charCode),
         }, button.size);

@@ -1,6 +1,6 @@
 export default class KeyboardModel {
   constructor(lang, content, layout) {
-    this.language = lang;
+    this.language = window.localStorage.getItem('language') || lang;
     this.content = content;
     this.currentCase = (char) => char.toLowerCase();
     this.metaKeys = {};
@@ -109,6 +109,11 @@ export default class KeyboardModel {
   setLanguage(value) {
     const last = this.language;
     this.language = value;
+    try {
+      window.localStorage.setItem('language', value);
+    } catch {
+      alert('LocalStorage не работает в режиме инкогнито. Выполните проверку в обычном режиме.');
+    }
     if (last === value) return;
     this.changeLanguageCallbacks.map((callback) => callback(value, last));
   }

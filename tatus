@@ -1,0 +1,17 @@
+[33mcommit 5c64b27ab25394331e8dcb6142fea01ae2e43924[m[33m ([m[1;36mHEAD -> [m[1;32mkeyboard[m[33m, [m[1;31morigin/keyboard[m[33m)[m
+Author: LisaW <LisaW@ya.ru>
+Date:   Sun May 8 16:21:55 2022 +0300
+
+    fix: build in production mode
+
+[33mcommit 060a70faede44050069d93ffaa0046dff00f9f0d[m
+Author: LisaW <LisaW@ya.ru>
+Date:   Sun May 8 16:13:36 2022 +0300
+
+    feat: keyboard MVC
+
+[33mcommit 1dd70149481c1154dbb770319a73edd127722d02[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: LisaW <LisaW@ya.ru>
+Date:   Sun May 8 16:03:07 2022 +0300
+
+    docs: add README.md
