@@ -9,9 +9,6 @@ export default class KeyboardController {
     const currentButton = this.model.getLayout().find((button) => button.code === charCode);
     if (!currentButton) return;
     if (currentButton.type === 'meta') {
-      // if (this.getMetaKeys()[charCode]){
-
-      // }
       this.model.setMetaKeys({
         ...this.model.getMetaKeys(),
         [charCode]: !this.model.getMetaKeys()[charCode],
@@ -48,7 +45,7 @@ export default class KeyboardController {
   keyUp(charCode) {
     const currentButton = this.model.getLayout().find((button) => button.code === charCode);
     if (!currentButton) return;
-    if (charCode !== 'CapsLock') {
+    if (charCode !== 'CapsLock' && currentButton.type === 'meta') {
       this.model.setMetaKeys({ ...this.model.getMetaKeys(), [charCode]: false });
     }
     if (charCode === 'ShiftLeft' || charCode === 'ShiftRight') {

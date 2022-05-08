@@ -83,13 +83,7 @@
         "type":"digit",
         "row": "zero"
     },
-    {   "content" : {"ru": "-", "eng":"-"},
-        "alt": {"ru": "_","eng":"_"},
-        "size": "normal",
-        "code": "Minus",
-        "type":"digit",
-        "row": "zero"
-    },
+   
     {   "content" : {"ru": "=", "eng":"="},
         "alt": {"ru": "+","eng":"+"},
         "size": "normal",

@@ -54,7 +54,6 @@ export default class KeyboardView extends View {
     );
     document.onkeydown = (event) => {
       event.preventDefault();
-      console.log(event.repeat);
       if (this.model.getMetaKeys()[event.code] !== undefined && event.repeat) {
         return;
       }

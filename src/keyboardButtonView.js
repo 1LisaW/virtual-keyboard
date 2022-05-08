@@ -8,7 +8,6 @@ export default class KeyboardButtonView extends View {
       actualChar,
       onKeyDown,
       onKeyUp,
-      // onChangeChar,
     } = options;
     this.node.textContent = actualChar;
     this.node.classList.add('button');
